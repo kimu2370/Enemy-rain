@@ -1,5 +1,6 @@
 class Enemy {
    constructor() {
+      this.audio = document.querySelector('audio');
       this.enemy = document.createElement('div');
       this.enemy.setAttribute('class','enemy');
       this.getRandomPosition();
@@ -30,6 +31,8 @@ class Enemy {
    die() {
       this.enemy.classList.add("die-enemy");
       clearInterval(this.intervalID);
+      this.audio.currentTime = 0;
+      this.audio.play();
       setTimeout(()=>{
          this.enemy.remove();
       },2000);

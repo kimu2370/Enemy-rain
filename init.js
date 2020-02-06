@@ -11,7 +11,6 @@ const createHero = () => {
 const createEnemy = () => {
    const enemy = new Enemy();
    bg.appendChild(enemy.enemy);
-   // console.log(heroTop);
 }
 
 const Level = () => {
