@@ -1,0 +1,72 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+#bg {
+   position: relative;
+   width: 800px;
+   height: 600px;
+   margin: 4% auto;
+   background-repeat: no-repeat;
+   background-image: url("images/bg.png");
+}
+
+.level {
+   position: absolute;
+   font-size: 80px;
+   top: 50%;
+   left: 50%;
+   margin-top: -40px;
+   margin-left: -128.9875px;
+   animation-duration: 3s;
+   animation-name: level;
+}
+@keyframes level {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+#hero {
+   position: absolute;
+   width: 35px;
+   height: 54px;
+   bottom: 0;
+   left: 400px;
+   margin-left: -17.5px;
+   background-repeat: no-repeat;
+   background-image: url("images/hero.png");
+   z-index: 1;
+}
+
+.enemy {
+   position: absolute;
+   width: 45px;
+   height: 54px;
+   left: 0;
+   top: 0;
+   background-repeat: no-repeat;
+   background-image: url('images/enemy.png');
+}
+
+.die-enemy {
+   background-position-x: -45px;
+}
+
+.front-face { background-position-x: 0px; }
+.back-face { background-position-x: -35px; }
+.left-face { background-position-x: -70px; }
+.right-face { background-position-x: -105px; }
