@@ -4,7 +4,7 @@ class Hero {
       this.position = parseInt(window.getComputedStyle(this.selector).left);
       this.min = 27;
       this.max = 773;
-      window.addEventListener('keydown',(event)=>{
+      addEventListener('keydown',(event)=>{
          if(event.key==="ArrowLeft" && this.position>=this.min) {
             this.position = this.position-10;
             this.selector.classList.value="left-face";

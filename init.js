@@ -24,9 +24,4 @@ const draw = (() => {
    setInterval(createEnemy,3000);
 })();
 
-
-
-
-
-
    
